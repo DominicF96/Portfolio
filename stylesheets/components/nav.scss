@@ -21,9 +21,11 @@
       line-height: 2em !important;
       text-decoration: none;
       color: $dark;
+
       i {
         cursor: pointer;
         color: rgba($primary, 0.8);
+
         &:hover {
           color: $primary;
         }

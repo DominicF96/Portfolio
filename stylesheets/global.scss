@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
-html, body {
+html,
+body {
   padding: 0;
   margin: 0;
   font-size: 0.9em;
@@ -12,6 +13,7 @@ html, body {
   main {
     max-width: 1200px;
     margin: auto;
+    overflow: hidden;
   }
 }
 
@@ -21,24 +23,41 @@ html, body {
   }
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: $primary;
 }
 
 h1 {
   font-size: 5em;
 }
+
 h2 {
   font-size: 2.5em;
 }
+
 h3 {
   font-size: 2em;
 }
+
 h4 {
   font-size: 1.5em;
 }
+
 h5 {
   font-size: 1.25em;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 100;
 }
 
 .text-highlight {
@@ -49,7 +68,6 @@ h5 {
 .angled_square_1 {
   left: 0px;
   top: -40vh;
-  z-index: 5;
   border-radius: $radius;
   height: 150vh;
   width: 400px;
@@ -60,12 +78,35 @@ h5 {
 }
 
 .angled_square_2 {
-  left: 400px;
-  top: -600px;
-  z-index: 5;
+  left: 30vw;
+  top: -45vh;
   border-radius: $radius;
   height: 3000px;
   width: 400px;
+  transform: rotate(-60deg);
+  background-color: rgba($primary, 0.05);
+  position: absolute;
+  z-index: 1;
+}
+
+.angled_square_3 {
+  left: 20vw;
+  top: 40vh;
+  border-radius: $radius;
+  height: 300vh;
+  width: 400px;
+  transform: rotate(45deg);
+  background-color: rgba($secondary, 0.05);
+  position: absolute;
+  z-index: 0;
+}
+
+.angled_square_4 {
+  left: 30vw;
+  top: -600px;
+  border-radius: $radius;
+  height: 3000px;
+  width: 100px;
   transform: rotate(-60deg);
   background-color: rgba($primary, 0.05);
   position: absolute;
@@ -116,7 +157,8 @@ h5 {
     animation-duration: 12s;
     -moz-animation-duration: 12s;
 
-    margin-left: 4em;
+    margin-left: 0em;
+
     @media only screen and (min-width: 1025px) {
       margin-left: 10em;
     }
@@ -127,7 +169,11 @@ h5 {
       }
 
       50% {
-        width: 800px;
+        width: 250px;
+
+        @media only screen and (min-width: 1025px) {
+          width: 800px;
+        }
       }
 
       100% {
@@ -163,10 +209,13 @@ h5 {
 }
 
 ::selection {
-  background: rgba($primary, 0.2); /* WebKit/Blink Browsers */
+  background: rgba($primary, 0.2);
+  /* WebKit/Blink Browsers */
 }
+
 ::-moz-selection {
-  background: rgba($primary, 0.2); /* Gecko Browsers */
+  background: rgba($primary, 0.2);
+  /* Gecko Browsers */
 }
 
 /* width */
@@ -184,8 +233,35 @@ h5 {
 ::-webkit-scrollbar-thumb {
   border-radius: 1em;
   background: rgba($primary, 0.8);
+
   &:hover {
     background: $primary;
     cursor: pointer;
   }
+}
+
+.card {
+  
+  padding: 3em 1em 1em 1em;
+  @media only screen and (min-width: 500px) {
+    padding: 3em 4em 1em 4em;
+  }
+  @media only screen and (min-width: 1025px) {
+    padding: 3em 6.6666em 1em 6.6666em;
+  }
+
+  font-size: 1.5em;
+}
+
+.quote {
+  &::before {
+    content: "“ "
+  }
+
+  &::after {
+    content: " ”"
+  }
+
+  padding-left: 2em;
+  border-left: 1px solid $secondary;
 }
