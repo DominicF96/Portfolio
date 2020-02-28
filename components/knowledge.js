@@ -2,6 +2,8 @@ import React from 'react';
 
 const Knowledge = () => {
   return (
+    <>
+    <div className="line_design ld_2" />
     <section id="knowledge">
       <div class="col">
         <h1>Programming Language</h1>
@@ -41,6 +43,7 @@ const Knowledge = () => {
         </ul>
       </div>
     </section>
+    </>
   );
 }
 

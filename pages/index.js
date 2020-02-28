@@ -4,6 +4,7 @@ import Catchphrase from '../components/catchphrase'
 import Presentation from '../components/presentation';
 import Knowledge from '../components/knowledge';
 import "../stylesheets/index.scss";
+import Projects from '../components/project';
 
 const Home = () => (
   <div className="container">
@@ -16,21 +17,12 @@ const Home = () => (
     <main>
       <Nav/>
       <Catchphrase/>
-      <div className="line_design ld_1" />
-      <div className="line_design ld_2" />
-      <div className="line_design ld_3" />
-      {/* <Presentation/> */}
       <Knowledge/>
-      <section id="projects"></section>
-      
+      <Presentation/>
+      {/* <Projects/> */}
       <div className="angled_square_1"/>
       <div className="angled_square_2"/>
-      <div className="angled_square_2"/>
     </main>
-
-    <footer>
-
-    </footer>
   </div>
 )
 

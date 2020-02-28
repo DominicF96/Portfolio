@@ -1,7 +1,11 @@
 #catchphrase {
 
-  padding: 10em 10em 16em 10em;
+  padding: 10em 4em 3em 4em;
   max-width: 100vh;
+
+  @media only screen and (min-width: 1025px) {
+    padding: 10em 10em 3em 10em;
+  }
 
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -22,6 +26,7 @@
     margin-top: 0;
 
     span {
+      text-transform: uppercase;
       color: $secondary;
       -webkit-animation-duration: 20s;
       animation-duration: 20s;
@@ -37,6 +42,9 @@
         width: 500px !important;
         background-size: contain;
         opacity: 0.1;
+        @media only screen and (max-width: 1200px) {
+          margin-left: 400px;
+        }
       }
 
       &.cp1 {

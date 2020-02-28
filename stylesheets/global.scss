@@ -3,6 +3,7 @@
 html, body {
   padding: 0;
   margin: 0;
+  font-size: 0.9em;
   background: $light;
   color: $dark;
   font-family: 'Montserrat', sans-serif;
@@ -11,6 +12,12 @@ html, body {
   main {
     max-width: 1200px;
     margin: auto;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  body {
+    font-size: 1em;
   }
 }
 
@@ -41,10 +48,10 @@ h5 {
 
 .angled_square_1 {
   left: 0px;
-  top: -500px;
+  top: -40vh;
   z-index: 5;
   border-radius: $radius;
-  height: 2000px;
+  height: 150vh;
   width: 400px;
   transform: rotate(45deg);
   background-color: rgba($secondary, 0.05);
@@ -108,6 +115,11 @@ h5 {
     -webkit-animation-duration: 12s;
     animation-duration: 12s;
     -moz-animation-duration: 12s;
+
+    margin-left: 4em;
+    @media only screen and (min-width: 1025px) {
+      margin-left: 10em;
+    }
 
     @keyframes move_2 {
       0% {

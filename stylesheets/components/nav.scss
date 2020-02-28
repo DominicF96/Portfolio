@@ -3,15 +3,14 @@
   top: 0;
   left: 0;
   right: 0;
-  margin: auto;
-  max-width: 1200px;
   padding: 1em;
   height: 2em;
   line-height: 2em;
   text-transform: uppercase;
+  background-color: rgba($light, 0.96);
   display: flex;
   justify-content: space-between;
-  z-index: 100;
+  z-index: 10000;
 
   div {
     height: 100%;
