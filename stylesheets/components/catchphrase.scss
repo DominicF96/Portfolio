@@ -1,0 +1,234 @@
+#catchphrase {
+
+  padding: 10em 10em 16em 10em;
+  max-width: 100vh;
+
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -webkit-animation-name: fade-in;
+  animation-name: fade-in;
+  -moz-animation-name: fade-in;
+
+  h1 {
+    font-size: 5em;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    color: rgba($dark, 0.8);
+    font-weight: lighter;
+    font-size: 2.5em;
+    margin-top: 0;
+
+    span {
+      color: $secondary;
+      -webkit-animation-duration: 20s;
+      animation-duration: 20s;
+      -moz-animation-duration: 20s;
+      animation-iteration-count: infinite;
+      position: absolute;
+
+      .bg {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        z-index: 0;
+        height: 500px !important;
+        width: 500px !important;
+        background-size: contain;
+        opacity: 0.1;
+      }
+
+      &.cp1 {
+        -webkit-animation-name: fade-in-from-right_1;
+        animation-name: fade-in-from-right_1;
+        -moz-animation-name: fade-in-from-right_1;
+
+        .bg {
+          background-image: url("http://localhost:3000/images/globe.png");
+        }
+      }
+
+      &.cp2 {
+        -webkit-animation-name: fade-in-from-right_2;
+        animation-name: fade-in-from-right_2;
+        -moz-animation-name: fade-in-from-right_2;
+
+        .bg {
+          background-image: url("http://localhost:3000/images/games.png");
+        }
+      }
+
+      &.cp3 {
+        -webkit-animation-name: fade-in-from-right_3;
+        animation-name: fade-in-from-right_3;
+        -moz-animation-name: fade-in-from-right_3;
+
+        .bg {
+          background-image: url("http://localhost:3000/images/stack.png");
+        }
+      }
+
+      &.cp4 {
+        -webkit-animation-name: fade-in-from-right_4;
+        animation-name: fade-in-from-right_4;
+        -moz-animation-name: fade-in-from-right_4;
+
+        .bg {
+          background-image: url("http://localhost:3000/images/graduation.png");
+        }
+      }
+
+      &.cp5 {
+        -webkit-animation-name: fade-in-from-right_5;
+        animation-name: fade-in-from-right_5;
+        -moz-animation-name: fade-in-from-right_5;
+
+        .bg {
+          background-image: url("http://localhost:3000/images/better.png");
+        }
+      }
+    }
+  }
+
+  @keyframes fade-in-from-right_1 {
+    0% {
+      max-width: none;
+      display: block;
+      opacity: 0;
+      padding-left: 50px;
+    }
+
+    5% {
+      opacity: 1;
+      padding-left: 0;
+    }
+
+    15% {
+      opacity: 1;
+    }
+
+    19% {
+      display: none;
+      opacity: 0;
+      max-width: none;
+    }
+
+    20% {
+      max-width: 0;
+    }
+
+    100% {
+      display: none;
+      opacity: 0;
+    }
+  }
+}
+
+@keyframes fade-in-from-right_2 {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0;
+    padding-left: 50px;
+  }
+
+  25% {
+    opacity: 1;
+    padding-left: 0;
+  }
+
+  35% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in-from-right_3 {
+  0% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0;
+    padding-left: 50px;
+  }
+
+  45% {
+    opacity: 1;
+    padding-left: 0;
+  }
+
+  55% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in-from-right_4 {
+  0% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 0;
+    padding-left: 50px;
+  }
+
+  65% {
+    opacity: 1;
+    padding-left: 0;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in-from-right_5 {
+  0% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 0;
+    padding-left: 50px;
+  }
+
+  85% {
+    opacity: 1;
+    padding-left: 0;
+  }
+
+  95% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+html, body {
+  padding: 0;
+  margin: 0;
+  background: $light;
+  color: $dark;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+
+  main {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: $primary;
+}
+
+h1 {
+  font-size: 5em;
+}
+h2 {
+  font-size: 2.5em;
+}
+h3 {
+  font-size: 2em;
+}
+h4 {
+  font-size: 1.5em;
+}
+h5 {
+  font-size: 1.25em;
+}
+
+.text-highlight {
+  color: $primary;
+  font-weight: bolder;
+}
+
+.angled_square_1 {
+  left: 0px;
+  top: -500px;
+  z-index: 5;
+  border-radius: $radius;
+  height: 2000px;
+  width: 400px;
+  transform: rotate(45deg);
+  background-color: rgba($secondary, 0.05);
+  position: absolute;
+  z-index: 0;
+}
+
+.angled_square_2 {
+  left: 400px;
+  top: -600px;
+  z-index: 5;
+  border-radius: $radius;
+  height: 3000px;
+  width: 400px;
+  transform: rotate(-60deg);
+  background-color: rgba($primary, 0.05);
+  position: absolute;
+  z-index: 1;
+}
+
+.line_design {
+  margin-bottom: 1em;
+  height: 1px;
+
+  box-shadow: $shadow;
+
+  animation-iteration-count: infinite;
+
+  &.ld_1 {
+    background-color: $secondary;
+
+    -webkit-animation-name: move_1;
+    animation-name: move_1;
+    -moz-animation-name: move_1;
+    -webkit-animation-duration: 14s;
+    animation-duration: 14s;
+    -moz-animation-duration: 14s;
+
+    @keyframes move_1 {
+      0% {
+        width: 0;
+      }
+
+      50% {
+        width: 400px;
+      }
+
+      100% {
+        width: 0;
+      }
+    }
+  }
+
+  &.ld_2 {
+
+    background-color: $primary;
+
+    -webkit-animation-name: move_2;
+    animation-name: move_2;
+    -moz-animation-name: move_2;
+    -webkit-animation-duration: 12s;
+    animation-duration: 12s;
+    -moz-animation-duration: 12s;
+
+    @keyframes move_2 {
+      0% {
+        width: 0;
+      }
+
+      50% {
+        width: 800px;
+      }
+
+      100% {
+        width: 0;
+      }
+    }
+  }
+
+  &.ld_3 {
+    background-color: $secondary;
+
+    -webkit-animation-name: move_3;
+    animation-name: move_3;
+    -moz-animation-name: move_3;
+    -webkit-animation-duration: 16s;
+    animation-duration: 16s;
+    -moz-animation-duration: 16s;
+
+    @keyframes move_3 {
+      0% {
+        width: 0;
+      }
+
+      50% {
+        width: 200px;
+      }
+
+      100% {
+        width: 0;
+      }
+    }
+  }
+}
+
+::selection {
+  background: rgba($primary, 0.2); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: rgba($primary, 0.2); /* Gecko Browsers */
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $light;
+  box-shadow: inset $shadow;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 1em;
+  background: rgba($primary, 0.8);
+  &:hover {
+    background: $primary;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,38 @@
+#nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 1200px;
+  padding: 1em;
+  height: 2em;
+  line-height: 2em;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+
+  div {
+    height: 100%;
+    line-height: 2em;
+
+    a {
+      height: 2em !important;
+      line-height: 2em !important;
+      text-decoration: none;
+      color: $dark;
+      i {
+        cursor: pointer;
+        color: rgba($primary, 0.8);
+        &:hover {
+          color: $primary;
+        }
+      }
+
+      &:not(:last-child) {
+        margin-right: 0.5em !important;
+      }
+    }
+  }
+}

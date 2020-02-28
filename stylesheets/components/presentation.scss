@@ -1,0 +1,24 @@
+#presentation {
+
+  overflow: hidden;
+  z-index: 10;
+
+  -webkit-animation-name: fade-in;
+  animation-name: fade-in;
+  -moz-animation-name: fade-in;
+
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -moz-animation-duration: 1s;
+
+  h2 {
+    margin-bottom: 16px;
+  }
+
+  .presentation_content {
+    z-index: 10000;
+    width: 40%;
+    padding: 2em 10em;
+    z-index: 25;
+  }
+}
