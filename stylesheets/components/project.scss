@@ -1,0 +1,52 @@
+#projects {
+  padding: 1em 1em 1em 1em;
+
+  @media only screen and (min-width: 500px) {
+    padding: 1em 4em 1em 4em;
+  }
+
+  @media only screen and (min-width: 1025px) {
+    padding: 1em 10em 1em 10em;
+  }
+
+  h1 {
+    margin-bottom: 0.5em;
+    text-align: center;
+  }
+
+  .line_design {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .project_card {
+    clear: right;
+    margin: 3em 0;
+    background-color: white;
+    border-radius: $radius;
+    box-shadow: $shadow;
+    z-index: 100;
+    opacity: 1 !important;
+    position: relative;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+
+    img {
+      min-height: 100%;
+      width: 50%;
+      flex-basis: 50%;
+      object-fit: cover;
+    }
+
+    .description {
+      padding: 3em;
+      flex-basis: 50%;
+      h3 {
+        color: $secondary;
+      }
+    }
+  }
+}
