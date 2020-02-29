@@ -31,6 +31,21 @@ const Home = () => {
       <Head>
         <title>Dominic Fournier | Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="theme-color" content="#ffffff"></meta>
+        <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"></meta>
+        <meta charSet="utf-8" />
+        <meta name="robots" content="index,follow" />
+        <meta name="googlebot" content="index,follow" />
+        <meta name="description"
+          content="Im an engineering student from Canada working as a Full Stack developer since almost 2 years. Here's my portfolio." />
+        <meta property="og:title" content="Dominic Fournier | Portfolio" />
+        <meta property="og:description"
+          content="Im an engineering student from Canada working as a Full Stack developer since almost 2 years. Here's my portfolio." />
+        <meta property="og:image" content="/favicon.ico" />
+        <meta property="og:image:alt" content="Personal Logo" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="1200" />
+        <meta property="og:site_name" content="Dominic Fournier | Portfolio" />
         <script defer src="https://friconix.com/cdn/friconix.js"> </script>
       </Head>
       <main>
@@ -50,14 +65,14 @@ const Home = () => {
         <div className="angled_square_3" />
       </main>
       <footer>
-      {/* Dominic Fournier 2020, All Rights Reserved. */}
+        {/* Dominic Fournier 2020, All Rights Reserved. */}
         &copy; Dominic Fournier 2020, Tout droits réservés.
         <div className="links">
-        <a href="mailto:dominicfournier@outlook.com"><i className="fi-xnsuxl-envelope-text-solid"/></a>
-        <a target="_blank" href="/files/CV_Dominic_Fournier2020.pdf"><i className="fi-xnsuxl-file-solid"/></a>
-        <a target="_blank" href="https://github.com/DominicF96"><i className="fi-xnsuxl-github"/></a>
-        <a target="_blank" href="https://www.linkedin.com/in/dominic-fournier-1b068212a/"><i className="fi-cnsuxl-linkedin"/></a>
-      </div>
+          <a href="mailto:dominicfournier@outlook.com"><i className="fi-xnsuxl-envelope-text-solid" /></a>
+          <a target="_blank" href="/files/CV_Dominic_Fournier2020.pdf"><i className="fi-xnsuxl-file-solid" /></a>
+          <a target="_blank" href="https://github.com/DominicF96"><i className="fi-xnsuxl-github" /></a>
+          <a target="_blank" href="https://www.linkedin.com/in/dominic-fournier-1b068212a/"><i className="fi-cnsuxl-linkedin" /></a>
+        </div>
       </footer>
     </div>
   )
