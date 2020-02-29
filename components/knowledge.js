@@ -26,7 +26,8 @@ const Knowledge = () => {
   ];
 
   const software_data = [
-    { subject: 'Atlassian Suite', A: 85, fullMark: 100 },
+    // { subject: 'Atlassian Suite', A: 85, fullMark: 100 },
+    { subject: 'Suite Atlassian', A: 85, fullMark: 100 },
     { subject: 'Blender', A: 55, fullMark: 100 },
     { subject: 'Unity 3D', A: 80, fullMark: 100 },
     { subject: 'Office', A: 90, fullMark: 100 },
@@ -37,10 +38,10 @@ const Knowledge = () => {
 
   const other_data = [
     { subject: 'Agile', A: 95, fullMark: 100 },
-    { subject: 'Algorithm', A: 80, fullMark: 100 },
-    { subject: 'Data Structure', A: 85, fullMark: 100 },
     { subject: 'GIT', A: 80, fullMark: 100 },
-    { subject: 'OOP', A: 75, fullMark: 100 }
+    { subject: 'OOP', A: 75, fullMark: 100 },
+    { subject: 'Data Structure', A: 85, fullMark: 100 },
+    { subject: 'Algorithm', A: 80, fullMark: 100 },
   ];
 
   return (
@@ -48,7 +49,8 @@ const Knowledge = () => {
       <section id="knowledge">
         <div className="row">
           <div className="col">
-            <h3>Programming &amp; Query Languages</h3>
+            {/* <h3>Programming &amp; Query Languages</h3> */}
+            <h3>Langages de programmation de reqûetes</h3>
             <RadarChart cx={150} cy={115} outerRadius={75} width={300} height={230} data={languages_data}>
               <PolarGrid />
               <PolarAngleAxis dataKey="subject" />
@@ -56,7 +58,8 @@ const Knowledge = () => {
             </RadarChart>
           </div>
           <div className="col">
-            <h3>Frameworks</h3>
+            {/* <h3>Frameworks</h3> */}
+            <h3>Cadriciels</h3>
             <RadarChart cx={150} cy={115} outerRadius={75} width={300} height={230} data={frameworks_data}>
               <PolarGrid />
               <PolarAngleAxis dataKey="subject" />
@@ -66,7 +69,8 @@ const Knowledge = () => {
         </div>
         <div className="row">
           <div className="col">
-            <h3>Software</h3>
+            {/* <h3>Software</h3> */}
+            <h3>Logiciels</h3>
             <RadarChart cx={169} cy={115} outerRadius={75} width={300} height={230} data={software_data}>
               <PolarGrid />
               <PolarAngleAxis dataKey="subject" />
@@ -74,8 +78,9 @@ const Knowledge = () => {
             </RadarChart>
           </div>
           <div className="col">
-            <h3>Other</h3>
-            <RadarChart cx={150} cy={115} outerRadius={75} width={300} height={230} data={other_data}>
+            {/* <h3>Other</h3> */}
+            <h3>Autres</h3>
+            <RadarChart cx={150} cy={115} outerRadius={65} width={300} height={230} data={other_data}>
               <PolarGrid />
               <PolarAngleAxis dataKey="subject" />
               <Radar name="languages" dataKey="A" stroke={primary_color} fill={primary_color} fillOpacity={0.6} />

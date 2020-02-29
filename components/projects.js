@@ -3,13 +3,14 @@ import React from 'react';
 const Projects = () => {
   return (
     <section id="projects">
-      <h1>Projects</h1>
+      {/* <h1>Projects</h1> */}
+      <h1>Projets</h1>
 
       <div className="project_card">
         <img src="/images/test.jpg" />
         <div className="description">
-          <h3>Project A</h3>
-          <p>Soon...</p>
+          <h3>Projet A</h3>
+          <p>Bientôt...</p>
         </div>
       </div>
 
@@ -18,8 +19,8 @@ const Projects = () => {
       <div className="project_card">
         <img src="/images/test.jpg" />
         <div className="description">
-          <h3>Project B</h3>
-          <p>Soon...</p>
+          <h3>Projet B</h3>
+          <p>Bientôt...</p>
         </div>
       </div>
 
@@ -29,8 +30,8 @@ const Projects = () => {
       <div className="project_card">
         <img src="/images/test.jpg" />
         <div className="description">
-          <h3>Project C</h3>
-          <p>Soon...</p>
+          <h3>Projet C</h3>
+          <p>Bientôt...</p>
         </div>
       </div>
 
