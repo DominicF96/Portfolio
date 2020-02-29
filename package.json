@@ -8,11 +8,18 @@
     "start": "next start"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.27",
+    "@fortawesome/free-solid-svg-icons": "^5.12.1",
+    "@fortawesome/react-fontawesome": "^0.1.8",
     "@zeit/next-sass": "^1.0.1",
     "next": "9.2.2",
+    "next-fonts": "^1.0.3",
     "node-sass": "^4.13.1",
     "react": "16.13.0",
     "react-dom": "16.13.0",
     "recharts": "^2.0.0-beta.1"
+  },
+  "devDependencies": {
+    "@zeit/next-css": "^1.0.1"
   }
 }

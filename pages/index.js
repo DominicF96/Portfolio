@@ -3,7 +3,7 @@ import Nav from '../components/nav';
 import Catchphrase from '../components/catchphrase';
 import Knowledge from '../components/knowledge';
 import Projects from '../components/projects';
-import "../stylesheets/index.scss";
+import "../styles/index.scss";
 
 const Home = () => {
 
@@ -31,7 +31,7 @@ const Home = () => {
       <Head>
         <title>Dominic Fournier | Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
-        <script src="https://kit.fontawesome.com/7dd45aaf72.js" crossorigin="anonymous"></script>
+        <script defer src="https://friconix.com/cdn/friconix.js"> </script>
       </Head>
       <main>
         {logTrashTalk()}
@@ -50,10 +50,10 @@ const Home = () => {
       <footer>
         &copy; Dominic Fournier 2020, All Rights Reserved.
         <div className="links">
-        <a href="mailto:dominicfournier@outlook.com"><i className="fas fa-2x fa-envelope-open-text"/></a>
-        <a target="_blank" href="/files/CV_Dominic_Fournier2020.pdf"><i className="fa fa-2x fa-file-invoice"/></a>
-        <a target="_blank" href="https://github.com/DominicF96"><i className="fab fa-2x fa-github-square"/></a>
-        <a target="_blank" href="https://www.linkedin.com/in/dominic-fournier-1b068212a/"><i className="fab fa-2x fa-linkedin"/></a>
+        <a href="mailto:dominicfournier@outlook.com"><i className="fi-xnsuxl-envelope-text-solid"/></a>
+        <a target="_blank" href="/files/CV_Dominic_Fournier2020.pdf"><i className="fi-xnsuxl-file-solid"/></a>
+        <a target="_blank" href="https://github.com/DominicF96"><i className="fi-xnsuxl-github"/></a>
+        <a target="_blank" href="https://www.linkedin.com/in/dominic-fournier-1b068212a/"><i className="fi-cnsuxl-linkedin"/></a>
       </div>
       </footer>
     </div>
