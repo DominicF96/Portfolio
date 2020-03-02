@@ -57,12 +57,12 @@ const Portfolio = ({ dict }) => {
   )
 }
 
-Portfolio.getInitialProps = async ctx => {
+Portfolio.getInitialProps = async ({req, ctx}) => {
   const { lang } = ctx.query;
 
-  console.log(process.env);
+  const host = req ? req.headers['x-forwarded-host'] : location.host
 
-  const res = await axios.post(`http://${process.env.HOST_ENDPOINT}/api/dictionnary`, {
+  const res = await axios.post(`http://${host}/api/dictionnary`, {
     lang
   });
   return { dict: res.data };
