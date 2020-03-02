@@ -1,25 +1,17 @@
 import React from 'react';
 
-const Catchphrase = () => {
+const Catchphrase = ({ dict }) => {
   return (
     <section id="catchphrase">
-      {/* Hello! */}
-      <h1>Salut!</h1>
-      {/* I'm a Software Developer */}
-      <h2>Je suis développeur logiciel
+      <h1>{dict.hello}</h1>
+      <h2>{dict.i_am_a_soft_dev}
         <div>
-          {/* Building */}
-          Je conçoit&nbsp;
-          {/* <span className="text-highlight cp1">the web<div className="bg" /></span>
-          <span className="text-highlight cp2">games<div className="bg" /></span>
-          <span className="text-highlight cp3">an engineering stack<div className="bg" /></span>
-          <span className="text-highlight cp4">courses<div className="bg" /></span>
-          <span className="text-highlight cp5">skills<div className="bg" /></span> */}
-          <span className="text-highlight cp1">des applications web<div className="bg" /></span>
-          <span className="text-highlight cp2">des jeux<div className="bg" /></span>
-          <span className="text-highlight cp3">une suite logicielle pour développeurs<div className="bg" /></span>
-          <span className="text-highlight cp4">des cours<div className="bg" /></span>
-          <span className="text-highlight cp5">le tout en améliorant mes capacités<div className="bg" /></span>
+          {dict.building}&nbsp;
+          <span className="text-highlight cp1">{dict.the_web}<div className="bg" /></span>
+          <span className="text-highlight cp2">{dict.games}<div className="bg" /></span>
+          <span className="text-highlight cp3">{dict.engineering_stack}<div className="bg" /></span>
+          <span className="text-highlight cp4">{dict.courses}<div className="bg" /></span>
+          <span className="text-highlight cp5">{dict.skills}<div className="bg" /></span>
         </div>
       </h2>
     </section>

@@ -1,16 +1,15 @@
 import React from 'react';
 
-const Projects = () => {
+const Projects = ({ dict }) => {
   return (
     <section id="projects">
-      {/* <h1>Projects</h1> */}
-      <h1>Projets</h1>
+      <h1>{dict.projects}</h1>
 
       <div className="project_card">
         <img src="/images/test.jpg" />
         <div className="description">
-          <h3>Projet A</h3>
-          <p>Bientôt...</p>
+          <h3>{dict.project} A</h3>
+          <p>{dict.soon}</p>
         </div>
       </div>
 
@@ -19,19 +18,19 @@ const Projects = () => {
       <div className="project_card">
         <img src="/images/test.jpg" />
         <div className="description">
-          <h3>Projet B</h3>
-          <p>Bientôt...</p>
+          <h3>{dict.project} B</h3>
+          <p>{dict.soon}</p>
         </div>
       </div>
 
       <div className="line_design ld_1" />
-      <div style={{height: "1em"}}/>
+      <div style={{ height: "1em" }} />
 
       <div className="project_card">
         <img src="/images/test.jpg" />
         <div className="description">
-          <h3>Projet C</h3>
-          <p>Bientôt...</p>
+          <h3>{dict.project} C</h3>
+          <p>{dict.soon}</p>
         </div>
       </div>
 
