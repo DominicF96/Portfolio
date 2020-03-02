@@ -3,6 +3,8 @@ export default (req, res) => {
 
   res.statusCode = 200;
   res.setHeader("Content-Type", "application/json");
+  res.setHeader("Access-Control-Allow-Origin", "*")
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
 
   const dict = {
     fr: {
