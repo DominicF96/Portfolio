@@ -82,8 +82,6 @@ Portfolio.getInitialProps = async ctx => {
   const { lang } = ctx.query;
   const { req } = ctx;
 
-  console.log(req);
-
   const protocol = req
     ? `${req.headers["x-forwarded-proto"]}:`
     : location.protocol;
