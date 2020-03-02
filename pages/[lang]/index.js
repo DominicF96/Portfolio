@@ -39,7 +39,6 @@ const Portfolio = ({ dict }) => {
         </script>
       </Head>
       <main>
-        {logTrashTalk()}
         <Nav dict={dict.nav} />
         <Catchphrase dict={dict.catchphrase} />
         <div className="line_design ld_2" />
