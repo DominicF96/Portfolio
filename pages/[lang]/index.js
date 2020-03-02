@@ -60,7 +60,7 @@ const Portfolio = ({ dict }) => {
 Portfolio.getInitialProps = async ctx => {
   const { lang } = ctx.query;
 
-  const res = await axios.post("/api/dictionnary", {
+  const res = await axios.post("https://localhost/api/dictionnary", {
     lang
   });
   return { dict: res.data };
