@@ -18,8 +18,8 @@ const Home = () => {
         <meta property="og:title" content="Dominic Fournier | Portfolio" />
         <meta property="og:description"
           content="Im an engineering student from Canada working as a Full Stack developer since almost 2 years. Here's my portfolio." />
-        <meta property="og:image" content="/favicon.ico" />
-        <meta property="og:image:alt" content="Personal Logo" />
+        <meta property="og:image" content="/preview.png" />
+        <meta property="og:image:alt" content="Site Preview" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="1200" />
         <meta property="og:site_name" content="Dominic Fournier | Portfolio" />

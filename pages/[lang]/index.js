@@ -2,7 +2,7 @@ import Head from "next/head";
 import Nav from "../../components/nav";
 import Catchphrase from "../../components/catchphrase";
 import Knowledge from "../../components/knowledge";
-import Projects from "../../components/projects";
+import Projects from "../../components/projects/projects";
 import "../../styles/index.scss";
 const axios = require("axios");
 
