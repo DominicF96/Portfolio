@@ -27,17 +27,20 @@ const Home = () => {
       </Head>
       <main id="language_selection">
         <div className="v_center">
-        <div className="line_design ld_1" />
-          <a href="/fr">FR</a>&nbsp;/&nbsp;<a href="en">EN</a>
-        <div className="line_design ld_2" />
+          <div className="line_design ld_1" />
+          <div style={{ position: "relative", zIndex: "300" }}>
+            <a href="/fr">FR</a>&nbsp;/&nbsp;<a href="/en">EN</a>
+          </div>
+          <div className="line_design ld_2" />
         </div>
         <div className="angled_square_1" />
         <div className="angled_square_2" />
         <div className="angled_square_3" />
-      </main>
-      <footer id="simple_footer">
-        &copy; Dominic Fournier 2020, Tout droits réservés.
+        <footer id="simple_footer">
+          &copy; Dominic Fournier 2020, Tout droits réservés.
       </footer>
+      </main>
+
     </div>
   )
 }

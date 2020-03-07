@@ -56,7 +56,7 @@ const Portfolio = ({ dict }) => {
       <footer>
         &copy; Dominic Fournier 2020, {dict.footer.rights_reserved}
         <div className="links">
-          <a href="mailto:dominicfournier@outlook.com">
+          <a href="mailto:me@dominicfournier.com">
             <i className="fi-xnsuxl-envelope-text-solid" />
           </a>
           <a target="_blank" href="/files/CV_Dominic_Fournier2020.pdf">
