@@ -54,7 +54,6 @@ const Portfolio = ({ dict }) => {
         <div className="angled_square_3" />
       </main>
       <footer>
-        {/* Dominic Fournier 2020, All Rights Reserved. */}
         &copy; Dominic Fournier 2020, {dict.footer.rights_reserved}
         <div className="links">
           <a href="mailto:dominicfournier@outlook.com">
