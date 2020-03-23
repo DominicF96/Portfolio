@@ -85,8 +85,7 @@ Portfolio.getInitialProps = async ctx => {
     ? `${req.headers["x-forwarded-proto"]}:`
     : location.protocol;
   const host = req ? req.headers["x-forwarded-host"] : location.host;
-  // ${protocol}//${host}
-  const res = await axios.post(`http://localhost:3000/api/dictionnary`, {
+  const res = await axios.post(`${protocol}//${host}/api/dictionnary`, {
     lang
   });
   return { dict: res.data };
