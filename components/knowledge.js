@@ -9,7 +9,7 @@ const Knowledge = ({ dict }) => {
   const languages_data = [
     { subject: 'TypeScript', A: 65, fullMark: 100 },
     { subject: 'SQL', A: 60, fullMark: 100 },
-    { subject: 'Python', A: 50, fullMark: 100 },
+    { subject: 'Python', A: 65, fullMark: 100 },
     { subject: 'JavaScript', A: 95, fullMark: 100 },
     { subject: 'Java', A: 70, fullMark: 100 },
     { subject: 'C#', A: 80, fullMark: 100 },
@@ -17,19 +17,20 @@ const Knowledge = ({ dict }) => {
   ];
 
   const frameworks_data = [
-    { subject: 'Angular 4', A: 50, fullMark: 100 },
-    { subject: 'NextJS', A: 55, fullMark: 100 },
-    { subject: 'ExpressJS', A: 80, fullMark: 100 },
+    { subject: 'Angular 4', A: 60, fullMark: 100 },
+    { subject: 'NextJS', A: 65, fullMark: 100 },
     { subject: 'NodeJS', A: 75, fullMark: 100 },
+    { subject: 'ExpressJS', A: 80, fullMark: 100 },
     { subject: 'React', A: 95, fullMark: 100 },
-    { subject: 'Android', A: 35, fullMark: 100 }
+    { subject: 'Android', A: 35, fullMark: 100 },
+    { subject: 'SocketIO', A: 60, fullMark: 100 }
   ];
 
   const software_data = [
     { subject: dict.atlassian_suite, A: 85, fullMark: 100 },
     { subject: 'Blender', A: 55, fullMark: 100 },
     { subject: 'Unity 3D', A: 80, fullMark: 100 },
-    { subject: 'Office', A: 90, fullMark: 100 },
+    { subject: 'MS Office', A: 90, fullMark: 100 },
     { subject: 'Photoshop', A: 60, fullMark: 100 },
     { subject: 'Sony Vegas', A: 60, fullMark: 100 },
     { subject: 'VS Code', A: 95, fullMark: 100 }

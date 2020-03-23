@@ -28,12 +28,18 @@ export default (req, res) => {
       },
       quotes: {
         student_work_experience: "Étudiant de troisième année en ingénierie logicielle avec près de 2 ans d'expérience en tant que développeur Full Stack.",
-        passion_building_soft: "Je conçoit des outils permettant de sauver du temps en expérimentant avec les plus récents cadriciels et librairies."
+        passion_building_soft: "Je conçoit des outils permettant de sauver du temps en expérimentant avec les plus récents cadriciels et librairies.",
+        creativity_is_a_must: "J'ai besoin que mon travail laisse place à la créativité et à l'innovation."
       },
       projects: {
         projects: "Projets",
-        project: "Projet",
-        soon: "Bientôt..."
+        list: [
+          {
+            name: "Adapted Smart Universal IR Remote",
+            description: "An adapted infrared remote module that can be connected to an Android device via USB. The remote was designed to be usable by people with severe motor skills problems. Paired with a native Android application, the module could be used to program and replay any signal to control virtually any infrared device.",
+            github: "https://github.com/DominicF96/Ergotera-App"
+          }
+        ],
       },
       footer: {
         rights_reserved: "Tous droits réservés."
@@ -62,11 +68,18 @@ export default (req, res) => {
       },
       quotes: {
         student_work_experience: "Third year software engineering student with almost 2 years of professional experience as a Full Stack Developer.",
-        passion_building_soft: "Developing time-saving tools and interfaces while experimenting with new frameworks and librairies is my hobby."
+        passion_building_soft: "Developing time-saving tools and interfaces while experimenting with new frameworks and librairies is my hobby.",
+        creativity_is_a_must: "Creativity and innovation are a must in a workplace."
       },
       projects: {
         projects: "Projects",
-        project: "Project",
+        list: [
+          {
+            name: "Adapted Smart Universal IR Remote",
+            description: "An adapted infrared remote module that can be connected to an Android device via USB. The remote was designed to be usable by people with severe motor skills problems. Paired with a native Android application, the module could be used to program and replay any signal to control virtually any infrared device.",
+            github: "https://github.com/DominicF96/Ergotera-App"
+          }
+        ],
         soon: "Soon..."
       },
       footer: {

@@ -42,19 +42,18 @@ const Portfolio = ({ dict }) => {
         <Nav dict={dict.nav} />
         <Catchphrase dict={dict.catchphrase} />
         <div className="line_design ld_2" />
-        <div className="card">{dict.quotes.student_work_experience}</div>
         <Knowledge dict={dict.knowledge} />
-        <div className="card" style={{ paddingTop: "0", textAlign: "right" }}>
-          {dict.quotes.passion_building_soft}
-        </div>
+        <div className="card">{dict.quotes.student_work_experience}</div>
+        <div className="card" style={{ textAlign: "right" }}>{dict.quotes.passion_building_soft}</div>
         <div className="line_design ld_1" />
+        <div className="card">{dict.quotes.creativity_is_a_must}</div>
         <Projects dict={dict.projects} />
         <div className="angled_square_1" />
         <div className="angled_square_2" />
         <div className="angled_square_3" />
       </main>
+
       <footer>
-        &copy; Dominic Fournier 2020, {dict.footer.rights_reserved}
         <div className="links">
           <a href="mailto:me@dominicfournier.com">
             <i className="fi-xnsuxl-envelope-text-solid" />
@@ -72,6 +71,7 @@ const Portfolio = ({ dict }) => {
             <i className="fi-cnsuxl-linkedin" />
           </a>
         </div>
+            &copy; Dominic Fournier 2020, {dict.footer.rights_reserved}
       </footer>
     </div>
   );
@@ -85,8 +85,8 @@ Portfolio.getInitialProps = async ctx => {
     ? `${req.headers["x-forwarded-proto"]}:`
     : location.protocol;
   const host = req ? req.headers["x-forwarded-host"] : location.host;
-
-  const res = await axios.post(`${protocol}//${host}/api/dictionnary`, {
+  // ${protocol}//${host}
+  const res = await axios.post(`http://localhost:3000/api/dictionnary`, {
     lang
   });
   return { dict: res.data };

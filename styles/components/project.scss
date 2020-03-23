@@ -47,6 +47,10 @@
       h3 {
         color: $secondary;
       }
+      .project_social {
+        display: flex;
+        justify-content: flex-start;
+      }
     }
   }
 }
