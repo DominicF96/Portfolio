@@ -38,7 +38,7 @@ const Portfolio = ({ dict }) => {
         <script async src="https://kit.fontawesome.com/7dd45aaf72.js" crossorigin="anonymous"></script>
       </Head>
       <main>
-        <Button id="contact_me" onClick={() => {window.location = "mailto:me@dominicfournier.com"}}><i className="fas fa-envelope"/>&nbsp;Contact me</Button>
+        <Button id="contact_me" onClick={() => { window.location = "mailto:me@dominicfournier.com" }}><i className="fas fa-envelope" />&nbsp;{dict.contact_me}</Button>
         <Nav dict={dict.nav} />
         <Catchphrase dict={dict.catchphrase} />
         <div className="line_design ld_2" />
