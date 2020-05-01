@@ -39,7 +39,7 @@ export default (req, res) => {
             name: "Télécommande universelle adaptée",
             image: "/images/Remote_IR.png",
             description: "Un module de télécommande infrarouge universel pouvant être connecté à un appareil Android par USB. Le module a été conçu pour être utilisé par des personnes ayant de sévères problèmes moteurs. Jumelé avec son application Android, le module peut d'enregistrer et rejouer tout signal infrarouge permettant de contrôler pratiquement tout système infrarouge.",
-            github: "https://github.com/DominicF96/Ergotera-App"
+            github: "https://github.com/orgs/Ergotera/dashboard"
           },
           {
             name: "Modélisation 3D",
@@ -86,7 +86,7 @@ export default (req, res) => {
             name: "Adapted Smart Universal IR Remote",
             image: "/images/Remote_IR.png",
             description: "An adapted infrared remote module that can be connected to an Android device via USB. The remote was designed to be usable by people with severe motor skills problems. Paired with a native Android application, the module could be used to program and replay any signal to control virtually any infrared device.",
-            github: "https://github.com/DominicF96/Ergotera-App"
+            github: "https://github.com/orgs/Ergotera/dashboard"
           },
           {
             name: "3D Modeling",
