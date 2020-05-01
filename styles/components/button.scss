@@ -1,0 +1,28 @@
+button {
+  background-color: $primary;
+  color: white;
+  font-family: inherit;
+  font-size: 1.5em;
+  border: 0;
+  box-shadow: $shadow;
+  text-transform: uppercase;
+  padding: 0.75em 1.5em;
+  cursor: pointer;
+  transition: $transition;
+  border-radius: $radius;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: $primary_hover;
+  }
+
+  &#contact_me {
+    z-index: 99999;
+    position: fixed;
+    right: 0.5em;
+    bottom: 0.75em;
+  }
+}

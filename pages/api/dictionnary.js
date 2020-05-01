@@ -35,11 +35,17 @@ export default (req, res) => {
         projects: "Projets",
         list: [
           {
-            name: "Adapted Smart Universal IR Remote",
-            description: "An adapted infrared remote module that can be connected to an Android device via USB. The remote was designed to be usable by people with severe motor skills problems. Paired with a native Android application, the module could be used to program and replay any signal to control virtually any infrared device.",
+            name: "Télécommande universelle adaptée",
+            image: "/images/Remote_IR.png",
+            description: "Un module de télécommande infrarouge universel pouvant être connecté à un appareil Android par USB. Le module a été conçu pour être utilisé par des personnes ayant de sévères problèmes moteurs. Jumelé avec son application Android, le module peut d'enregistrer et rejouer tout signal infrarouge permettant de contrôler pratiquement tout système infrarouge.",
             github: "https://github.com/DominicF96/Ergotera-App"
+          },
+          {
+            name: "Modélisation 3D",
+            image: "/images/Renders.png",
+            description: "Amateur de modélisation 3D et de Blender depuis plus de 5 ans. Modélisant principalement des modèles pour des projets personnels. J'ai appris à modéliser, texturer, définir l'ossature et animer. J'étudie actuellement les shaders.",
           }
-        ],
+        ]
       },
       footer: {
         rights_reserved: "Tous droits réservés."
@@ -76,11 +82,16 @@ export default (req, res) => {
         list: [
           {
             name: "Adapted Smart Universal IR Remote",
+            image: "/images/Remote_IR.png",
             description: "An adapted infrared remote module that can be connected to an Android device via USB. The remote was designed to be usable by people with severe motor skills problems. Paired with a native Android application, the module could be used to program and replay any signal to control virtually any infrared device.",
             github: "https://github.com/DominicF96/Ergotera-App"
+          },
+          {
+            name: "3D Modeling",
+            image: "/images/Renders.png",
+            description: "3D Modeling hobbyist and Blender enthusiast for over 5 years. Building game assets for personnal projects. Modeling, texturing, rigging and animating. Currently learning about shaders.",
           }
-        ],
-        soon: "Soon..."
+        ]
       },
       footer: {
         rights_reserved: "All Rights Reserved."

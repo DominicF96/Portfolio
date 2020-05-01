@@ -4,6 +4,7 @@ import Catchphrase from "../../components/catchphrase";
 import Knowledge from "../../components/knowledge";
 import Projects from "../../components/projects/projects";
 import "../../styles/index.scss";
+import Button from "../../components/Button";
 const axios = require("axios");
 
 const Portfolio = ({ dict }) => {
@@ -34,11 +35,10 @@ const Portfolio = ({ dict }) => {
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="1200" />
         <meta property="og:site_name" content="Dominic Fournier | Portfolio" />
-        <script defer src="https://friconix.com/cdn/friconix.js">
-          {" "}
-        </script>
+        <script async src="https://kit.fontawesome.com/7dd45aaf72.js" crossorigin="anonymous"></script>
       </Head>
       <main>
+        <Button id="contact_me" onClick={() => {window.location = "mailto:me@dominicfournier.com"}}><i className="fas fa-envelope"/>&nbsp;Contact me</Button>
         <Nav dict={dict.nav} />
         <Catchphrase dict={dict.catchphrase} />
         <div className="line_design ld_2" />
@@ -56,19 +56,19 @@ const Portfolio = ({ dict }) => {
       <footer>
         <div className="links">
           <a href="mailto:me@dominicfournier.com">
-            <i className="fi-xnsuxl-envelope-text-solid" />
+            <i className="fas fa-envelope" />
           </a>
           <a target="_blank" href="/files/CV_Dominic_Fournier2020.pdf">
-            <i className="fi-xnsuxl-file-solid" />
+            <i className="fas fa-id-card" />
           </a>
           <a target="_blank" href="https://github.com/DominicF96">
-            <i className="fi-xnsuxl-github" />
+            <i className="fab fa-github" />
           </a>
           <a
             target="_blank"
             href="https://www.linkedin.com/in/dominic-fournier-1b068212a/"
           >
-            <i className="fi-cnsuxl-linkedin" />
+            <i className="fab fa-linkedin" />
           </a>
         </div>
             &copy; Dominic Fournier 2020, {dict.footer.rights_reserved}
@@ -85,7 +85,9 @@ Portfolio.getInitialProps = async ctx => {
     ? `${req.headers["x-forwarded-proto"]}:`
     : location.protocol;
   const host = req ? req.headers["x-forwarded-host"] : location.host;
-  const res = await axios.post(`${protocol}//${host}/api/dictionnary`, {
+  let env = process.env.NODE_ENV;
+  console.log(`Initializing ${env}.`);
+  const res = await axios.post(env === "development" ? `http://localhost:3000/api/dictionnary` : `${protocol}//${host}/api/dictionnary`, {
     lang
   });
   return { dict: res.data };

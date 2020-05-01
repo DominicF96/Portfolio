@@ -21,7 +21,7 @@ const Project = ({ image, title, description, github }) => {
         <p>{description}</p>
         <div className="project_social">
           {github !== undefined ? <a href={github}>
-            <i style={{ color: "#20f888", cursor: "pointer" }} className="fi-xnsux2-github-alt" />
+            <i style={{ color: "#20f888", cursor: "pointer" }} className="fab fa-github fa-2x" />
           </a> : null}
         </div>
       </div>
