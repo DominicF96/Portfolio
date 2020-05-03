@@ -35,7 +35,7 @@ const Portfolio = ({ dict }) => {
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="1200" />
         <meta property="og:site_name" content="Dominic Fournier | Portfolio" />
-        <script async src="https://kit.fontawesome.com/7dd45aaf72.js" crossorigin="anonymous"></script>
+        <script async src="https://kit.fontawesome.com/7dd45aaf72.js" crossOrigin="anonymous"></script>
       </Head>
       <main>
         <Button id="contact_me" onClick={() => { window.location = "mailto:me@dominicfournier.com" }}><i className="fas fa-envelope" />&nbsp;{dict.contact_me}</Button>
@@ -58,7 +58,7 @@ const Portfolio = ({ dict }) => {
           <a href="mailto:me@dominicfournier.com">
             <i className="fas fa-envelope" />
           </a>
-          <a target="_blank" href="/files/CV_Dominic_Fournier2020.pdf">
+          <a target="_blank" href={`/files/CV_Dominic_Fournier2020_${dict.lang}.pdf`}>
             <i className="fas fa-id-card" />
           </a>
           <a target="_blank" href="https://github.com/DominicF96">

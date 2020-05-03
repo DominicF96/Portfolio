@@ -6,6 +6,7 @@ export default (req, res) => {
 
   const dict = {
     fr: {
+      lang: "fr",
       contact_me: "Contactez-moi",
       catchphrase: {
         hello: "Salut!",
@@ -53,6 +54,7 @@ export default (req, res) => {
       }
     },
     en: {
+      lang: "en",
       contact_me: "Contact Me",
       catchphrase: {
         hello: "Hello!",
