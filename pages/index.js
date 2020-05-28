@@ -23,6 +23,7 @@ const Home = () => {
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="1200" />
         <meta property="og:site_name" content="Dominic Fournier | Portfolio" />
+        <script data-ad-client="ca-pub-9731892971945661" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <script defer src="https://friconix.com/cdn/friconix.js"> </script>
       </Head>
       <main id="language_selection">
