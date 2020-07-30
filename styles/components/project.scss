@@ -50,6 +50,9 @@
       .project_social {
         display: flex;
         justify-content: flex-start;
+        a {
+          margin-right: 1em;
+        }
       }
     }
   }

@@ -6,7 +6,7 @@ const Projects = ({ dict }) => {
     <section id="projects">
       <h1>{dict.projects}</h1>
       {dict.list.map((project) => {
-        return <Project image={project.image} title={`${project.name}`} description={project.description} github={project.github} />
+        return <Project image={project.image} title={`${project.name}`} description={project.description} github={project.github} website={project.website} />
       })}
 
       <div className="line_design ld_2" />
